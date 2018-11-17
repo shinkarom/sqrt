@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title></title>
+    <title>Square Root Formula Visualizer</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="sakura.css">
 	<script src="script.js"></script>
   </head>
   <body onload="bodyLoad()">
-  
+	<h1>Square Root Formula Visualizer</h1>
+	<label for="number">The square: <input type="number" min="1" max="1000000000" size="5" value="25" id="number"></label>
+	<label for="first guess">The first guess: <input type="number" min="1" max="1000000" size="5" value="2" id="firstguess"></label>
+	<button id="calculate">Calculate</button>
+	<table>
+	  <thead style="font-weight: bold">
+	   <tr><td>Step #</td><td>Guess</td><td>Square/Guess</td><td>Average</td></tr>
+	  </thead>
+	  <tbody id="table"></tbody>
+	</table>
+	<h4 id="result"></h4>
+	<h6>(c)2018 Shinkarom</h6>
   </body>
 </html>
